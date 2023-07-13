@@ -1,0 +1,12 @@
+.skill-icon {
+    width: 24px; /* Adjust the width and height according to your requirements */
+    height: 24px;
+}
+
+.skill {
+    border-bottom: 3px solid white;
+    transition: 0.5s ease-in-out;
+    &:hover {
+        scale: 1.1;
+    }
+}

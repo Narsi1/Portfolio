@@ -1,0 +1,25 @@
+<div class="container mt-4">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h2 class="d-flex justify-content-center">Projects</h2>
+        </div>
+    </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor = 'let project of projects'>
+      <div class="card h-100 project-card">
+        <div class="card-body">
+          <h5 class="card-title">{{ project.title }}</h5>
+          <p class="card-text">
+            {{ project.description}}
+          </p>
+          <div class=" d-flex justify-content-center">
+            <button class="btn btn-outline-primary " (click)="openproject(project)">
+                Visit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>

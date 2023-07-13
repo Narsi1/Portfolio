@@ -1,0 +1,16 @@
+.footer {
+    border-top: 1px solid gray;
+    .footer-logo {
+        width: 200px;
+    }
+}
+
+.social {
+    i {
+        transition: all 0.5s ease;
+        cursor: pointer;
+        &:hover {
+            scale: 1.3;
+        }
+    }
+}

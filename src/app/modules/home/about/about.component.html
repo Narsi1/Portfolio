@@ -1,0 +1,38 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-6">
+      <h1>Hi...This is Narsi</h1>
+      <h4>I am a <span class="typewriter"></span> </h4>
+      <p>
+        Passionate web developer merging coding skills to create intuitive
+        websites with flawless functionality and exceptional user experiences.
+        Committed to staying up-to-date with the latest trends and technologies,
+        I strive to deliver cutting-edge solutions that leave a lasting impact.
+      </p>
+      <div>
+        <button class="btn btn-primary" (click)="downloadcv()">
+          Download CV
+        </button>
+        <button class="btn btn-primary ms-5">Contact</button>
+      </div>
+      <div class="my-5">
+        <img
+          src="assets/linkedin.png"
+          class="me-4 contact"
+          (click)="openlinkedin()"
+        />
+        <img
+          src="assets/github.png"
+          style="background: white; border-radius: 50%"
+          class="contact"
+          (click)="opengithub()"
+        />
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="item">
+        <div class="polaroid"><img src="assets/profile.png" /></div>
+      </div>
+    </div>
+  </div>
+</div>

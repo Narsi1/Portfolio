@@ -1,0 +1,26 @@
+$custom-primary : #da7d29;
+$custom-primary-bg : #c95f00;
+
+.btn.btn-primary{
+    background: $custom-primary;
+    &:hover{
+        background: $custom-primary-bg;
+    }
+    &:active{
+        background: $custom-primary-bg;
+    }
+}
+
+.btn.btn-outline-primary{
+    color: $custom-primary;
+    outline: $custom-primary;
+    border-color: $custom-primary;
+    &:hover{
+        color: $white;
+        background: $custom-primary-bg;
+    }
+    &:active{
+        color: $white;
+        background: $custom-primary-bg;
+    }
+}
