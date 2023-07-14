@@ -56,4 +56,14 @@ export class AboutComponent implements OnInit {
       )
       .start();
   }
+
+  scrollToSection(sectionId: string): void {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      })
+    }
+  }
 }

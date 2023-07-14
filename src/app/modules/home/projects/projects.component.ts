@@ -19,31 +19,6 @@ export class ProjectsComponent implements OnInit {
         description: 'eCommerce WebApp build in Angular, SASS & Bootstrap 5',
         url: 'https://www.google.com'
       },
-      {
-        title: 'eCommerce',
-        description: 'eCommerce WebApp build in Angular, SASS & Bootstrap 5',
-        url: ''
-      },
-      {
-        title: 'eCommerce',
-        description: 'eCommerce WebApp build in Angular, SASS & Bootstrap 5',
-        url: ''
-      },
-      {
-        title: 'eCommerce',
-        description: 'eCommerce WebApp build in Angular, SASS & Bootstrap 5',
-        url: ''
-      },
-      {
-        title: 'eCommerce',
-        description: 'eCommerce WebApp build in Angular, SASS & Bootstrap 5',
-        url: ''
-      },
-      {
-        title: 'eCommerce',
-        description: 'eCommerce WebApp build in Angular, SASS & Bootstrap 5',
-        url: ''
-      },
     ]
     
   }
