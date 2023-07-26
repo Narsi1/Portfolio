@@ -1,7 +1,22 @@
-.card:hover {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    scale: 1.1;
-}
 .card {
     transition: all 0.5s ease;
+    background: black;
+    border: 2px solid #da7d29;
+    color: white;
+    .visit-project-btn {
+    
+    }
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background: #da7d29;
+    border: 2px solid #da7d29;
+    .visit-project-btn {
+        border: 1px solid white;
+        color: white;
+        &:hover {
+            background-color: #da7d29;
+        }
+    }
 }

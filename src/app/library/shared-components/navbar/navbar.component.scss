@@ -1,10 +1,13 @@
 .navbar {
     background-color: black !important;
+    font-size: larger;
     img {
         width: 48px;
         
     }
     .nav-item {
         cursor: pointer;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }

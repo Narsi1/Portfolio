@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-interface IProject {
-  title: string;
-  description: string;
-  url: string;
-}
+import { PROJECTS } from 'src/shared/constants/projects.constants';
+import { IProject } from 'src/shared/interface/project.interface';
+
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -11,17 +9,8 @@ interface IProject {
 })
 export class ProjectsComponent implements OnInit {
  
-  projects: IProject[] = [];
-  ngOnInit(): void {
-    this.projects = [
-      {
-        title: 'eCommerce',
-        description: 'eCommerce WebApp build in Angular, SASS & Bootstrap 5',
-        url: 'https://www.google.com'
-      },
-    ]
-    
-  }
+  projects: IProject[] = PROJECTS;
+  ngOnInit(): void {}
   openproject(project: IProject): void {
     window.open(project.url,'blank')
   }

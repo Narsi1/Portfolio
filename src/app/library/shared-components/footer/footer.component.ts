@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SOCIAL } from 'src/shared/constants/social.constants';
 
 @Component({
   selector: 'app-footer',
@@ -6,16 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-  openLinkedin() {
-    window.open('https://www.linkedin.com/in/narsi-modugu498/', 'blank');
-  }
-  openGithub() {
-    window.open('https://github.com/Narsi1', 'blank');
-  }
-  openInstagram() {
-    window.open('https://www.linkedin.com/in/narsi-modugu498/', 'blank');
-  }
-  openFacebook() {
-    window.open('https://github.com/Narsi1', 'blank');
+  social = SOCIAL;
+
+  openUrl(url: string): void {
+    window.open(url, 'blank');
   }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import TypeWriter from 't-writer.js';
+import { ROLES } from 'src/shared/constants/myRoles.constants';
 
 @Component({
   selector: 'app-about',
@@ -48,11 +49,7 @@ export class AboutComponent implements OnInit {
     const writer = new TypeWriter(target, options);
     writer
       .strings(600, 
-        'Web Application Developer',
-        'Frontend Developer',
-        'Angular Developer',
-        'Application & Fulfilment Officer',
-        'Wordpress Developer',
+        ...ROLES,
       )
       .start();
   }
